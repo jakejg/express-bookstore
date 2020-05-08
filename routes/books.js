@@ -1,9 +1,6 @@
 const express = require("express");
 const Book = require("../models/book");
-const { validateBookJson } = require('../middleware/jsonValidation')
-const jsonschema = require('jsonschema');
-const bookSchema = require('../schemas/bookSchema.json');
-const ExpressError = require('../expressError')
+const { validateBookJson } = require('../middleware/jsonValidation');
 
 const router = new express.Router();
 
